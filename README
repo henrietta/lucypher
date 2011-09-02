@@ -16,12 +16,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 1. How do I use it?
 
 	First open lucypher.py and configure the settings. They are constants that begin with CONF_
-	Then you can just call it as a program. Under Linux it will daemonize, under Windows you will have
+	Then you can just call it as a program. Under Linux it will daemonize(making it perfectly
+	safe to put a call to it in your initialization scripts), under Windows you will have
 	to play with Python interpreter to get rid of the console window.
 	
 2. What platform does it run on?
 
-	- Windows (note that it probably needs Administrator access to access log files and serial port)
+	- Windows (note that it probably needs Administrator access to access log files
+			   if you position them in some weird places)
 	- Linux (run under root)
 	
 3. What modules does it require?
@@ -30,11 +32,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	
 4. What is it?
 
-	This is a replacement daemon for software Orvaldi ships with some of it's UPS-es, notably those
+	This is a replacement daemon for software Orvaldi ships with some of it's UPS-es, those
 	that require a perverse RS232 cable.
 	
-	Because the software they ship does not work, I have made mine version, so that I don't have to shell
-	out cash for a new UPS :)
+	Because the software they ship for Linux does not work, I have made mine version, so that 
+	I don't have to shell out cash for a new UPS :)
 
 5. How do I shut it down the daemon?
 
