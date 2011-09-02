@@ -72,6 +72,7 @@ while True:
 				os.system('shutdown -s -t 1')
 			else:
 				os.system('shutdown -h now')
+			sys.exit(0)
 	elif (supply_on) and (power_went_down_on != None):
 		log('Power restored')
 		power_went_down_on = None
