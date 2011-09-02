@@ -1,0 +1,52 @@
+Lucypher (c) by Piotr Maœlanka 2011
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+1. How do I use it?
+
+	First open lucypher.py and configure the settings. They are constants that begin with CONF_
+	Then you can just call it as a program. Under Linux it will daemonize, under Windows you will have
+	to play with Python interpreter to get rid of the console window.
+	
+2. What platform does it run on?
+
+	- Windows (note that it probably needs Administrator access to access log files and serial port)
+	- Linux (run under root)
+	
+3. What modules does it require?
+
+	pySerial
+	
+4. What is it?
+
+	This is a replacement daemon for software Orvaldi ships with some of it's UPS-es, notably those
+	that require a perverse RS232 cable.
+	
+	Because the software they ship does not work, I have made mine version, so that I don't have to shell
+	out cash for a new UPS :)
+
+5. How do I shut it down the daemon?
+
+	It is perfectly safe just to gun it.
+	
+6. Can I contact you for more info?
+
+	Sure.
+	
+7. Why root under Linux?
+
+	It's dead simple and I'm pretty sure it won't be used as an attack vector, although exercise caution to
+	properly chmod the source file (world readable, owner writable).
+	
+	Besides, it needs privileges to shutdown -h now
