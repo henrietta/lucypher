@@ -15,8 +15,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-CONF_LOG_FILE = 'C:\ups.txt'
-CONF_SERIAL_PORT = 0
+CONF_LOG_FILE = 'C:/ups.txt'	# use slashes, as backslash is an escape character
+CONF_SERIAL_PORT = 0			# refer to pySerial documentation on meaning of this
 CONF_TIME_TO_SHUTDOWN = 10*60		# 10 minutes
 
 CONF_QUERY_SECONDS = 1		# will query each x seconds
